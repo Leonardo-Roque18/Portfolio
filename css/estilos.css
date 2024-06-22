@@ -1,0 +1,221 @@
+*{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(26, 24, 24); padding: 55; font-family:"Trebuchet MS";
+    width: 100%;
+    min-width: 100vh;
+    z-index: 1;
+    height: 100vh;
+}
+
+.Apres {
+    font-size: x-small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section div.background-section {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}
+
+section div.background-section video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+section div.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba (0,0,0, 0.9) transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+section div.box div.conteudo{
+    width: 80%;
+}
+ 
+h1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100px;
+    right: 30%;
+}
+
+.posicoes {
+    position: absolute;
+    left: 78%;
+    top: 140px;
+    height: 100%;
+}
+
+.circle img {
+    margin-top: 15%;
+    border: 10px solid aqua;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .Linkedin {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;   
+ }
+
+ .insta {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+ }
+
+ .Github {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+ }
+
+ .sociais {
+     position: relative;
+     left: 20%;
+     top: 10px;
+     z-index: 1000;
+ }
+
+.conteudo h1 {
+    top: -30px;
+    margin: 50px;
+    color: #ffffff;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 1.3rem;
+}
+      
+
+.Sobre h1 {
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    position: relative;
+    margin: 5%;
+    top: 55px;
+    font-size: 3rem;
+    left: 90px;
+    z-index: 1;
+    color: aquamarine;
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.head {
+    display: flex;
+    border-top: 40px solid rgb(0, 238, 255);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 171, 180);
+    margin: 0;
+ }
+
+
+
+.projetos, .fatec, .curriculo{
+    /* border: solid black; */
+    color: rgb(0, 0, 0);
+    width: 120px;
+    background-color: aquamarine;
+    height: 50px;
+    border-radius: 13px;
+    text-decoration: none;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+ .Nome {
+ color: rgb(120, 246, 255);
+  left: 40px;
+  top: 5%;
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 800px;
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+
+.curriculo h2, .fatec h2, .projetos h2{
+    text-decoration: none;
+    color: black;
+}
+
+ /* Animação */
+
+.curriculo, .projetos, .fatec {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+ 
+.curriculo::before, .projetos::before, .fatec::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    border-radius: inherit;
+    height: 300%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.curriculo::after, .projetos::after, .fatec::after{
+    content: "";
+    position: absolute;
+    background-color: aquamarine;
+    inset: 3px;
+    border-radius: inherit;
+}
+
+.curriculo h2, .projetos h2, .fatec h2{
+    position: relative;
+    z-index: 10;
+}
+
+
+
+

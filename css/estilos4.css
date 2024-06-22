@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:"Trebuchet MS";
+    background-image: url(../Imagem/chloeprice.png);
+    overflow: hidden;
+}
+
+ .head {
+    display: flex;
+    background-color: rgb(0, 159, 187);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 40px solid rgb(70, 117, 170);
+    margin: 0;
+ }
+
+ .home, .fatec, .curriculo{
+    /* border: solid black; */
+    color: rgb(0, 0, 0);
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 13px;
+    text-decoration: none;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home h2{
+    color: black;
+    text-decoration: none;
+}
+
+.fatec h2{
+    color: black;
+    text-decoration: none;
+}
+/* 
+.curriculo{
+    border: solid black;
+    color: rgb(0, 0, 0);
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 13px;
+} */
+
+.curriculo h2{
+    color: black;
+    text-decoration: none;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 10%;
+    margin-top: 20px;
+}
+
+.bemvindo{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    border: solid rgb(70, 117, 170) 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.caixa img {
+    position: relative;
+    top: 10px;
+    height: 80px;
+    width: 150px;
+}
+
+.img {
+    width: 200px;
+    overflow: hidden;
+}
+
+.img {
+    margin-left: 25%;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #F9B15D;
+    border: solid #91C041 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.caixa h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+.caixa1, .caixa2, .caixa3{
+    background-color: rgb(0, 159, 187);
+    border: solid rgb(70, 117, 170) 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.caixa1 h1, .caixa2 h1, .caixa3 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.bemvindo h1{
+    color:rgb(0, 159, 187) ;
+}
+
+.link a{
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+.texto_caixa{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 9px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.texto{
+    position: relative;
+    left: 12.5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.centro-texto{
+    display: flex;
+    background-color: white;
+    border: solid rgb(0, 159, 187) 10px;
+    width: 60%;
+    position: relative;
+    right: 2%;
+}
+
+.texto h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Animação */
+
+.curriculo, .home, .fatec {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+ 
+.curriculo::before, .home::before, .fatec::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    border-radius: inherit;
+    height: 300%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.curriculo::after, .home::after, .fatec::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    inset: 3px;
+    border-radius: inherit;
+}
+
+.curriculo h2, .home h2, .fatec h2{
+    position: relative;
+    z-index: 10;
+}

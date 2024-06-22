@@ -1,0 +1,178 @@
+*{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(26, 24, 24); padding: 55; font-family:"Trebuchet MS";
+    width: 100%;
+    min-width: 100vh;
+    z-index: 1;
+    height: 100vh;
+}
+
+.Apres {
+    font-size: x-small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section div.background-section {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}
+
+section div.background-section video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+section div.box {
+    width: 100%;
+    height: 5000px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba (0,0,0, 0.9) transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.head {
+    display: flex;
+    background-color: rgb(180, 59, 59);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 40px solid rgb(255, 0, 0);
+    margin: 0;
+ }
+
+ .home, .fatec, .projetos {
+    /* border:  solid black; */
+    color: rgb(0, 0, 0);
+    width: 120px;
+    background-color: yellow;
+    height: 50px;
+    border-radius: 13px;    
+    text-decoration: none;
+    display: flex;  
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .home a, .fatec a, .projetos a {
+    color: black;   
+ }
+
+.habilidades{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    top: -15%;  
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    z-index: 8;
+   font-size: 80px;
+   display: flex;
+   position: relative;
+   top: 25%;
+   color: yellow;
+   font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.box1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(160, 160, 160, 0.5);
+    width: 60%; 
+    border-radius: 20px;
+    border: solid white;
+}
+
+.alinhar {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -15%;  
+}
+
+.conteudo-box {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Animação */
+
+.home, .projetos, .fatec {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+ 
+.home::before, .projetos::before, .fatec::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    border-radius: inherit;
+    height: 300%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.home::after, .projetos::after, .fatec::after{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    inset: 3px;
+    border-radius: inherit;
+}
+
+.home h2, .projetos h2, .fatec h2{
+    position: relative;
+    z-index: 10;
+}

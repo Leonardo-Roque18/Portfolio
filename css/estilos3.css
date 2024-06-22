@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(255, 253, 253); padding: 55; font-family:"Trebuchet MS";
+    width: 100%;
+    min-width: 100vh;
+    z-index: 1;
+    height: 100vh;
+}
+
+
+ .head {
+     background-color: rgb(160, 2, 2);
+     position: fixed;
+     height: 120px;
+     z-index: 7;
+     width: 100%;
+     top: 0px;
+     display: flex;
+     margin: 0;
+ }
+
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    border: solid black;
+    color: rgb(0, 0, 0);
+    left: 50px;
+    z-index: 10;
+    position: relative;
+    top: 45%;
+    width: 120px;
+    background-color: rgb(248, 248, 248);
+    height: 50px;
+    border-radius: 13px;
+    text-decoration: none;
+}
+
+.home h2{
+    color: black;
+    top: 10px;
+    padding-top: 10px;
+    padding-left: 26px;
+    text-decoration: none;
+}
+
+
+.borda_botão{
+    background-color: rgb(189, 188, 188);
+    position: fixed;
+    height: 80px;
+    top: 120px;
+    width: 100%;
+    top: 40px;
+    display: flex;
+    opacity: 100%;
+    margin: 0;
+}
+
+.projetos{
+    border: solid black;
+    color: rgb(0, 0, 0);
+    left: 100px;
+    z-index: 10;
+    position: relative;
+    top: 45%;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 13px;
+}
+    
+
+
+.projetos h2{
+    top: 10px;
+    padding-top: 10px;
+    padding-left: 13px;
+    color: black;
+}
+
+.curriculo{
+    border: solid black;
+    color: rgb(0, 0, 0);
+    left: 150px;
+    z-index: 10;
+    position: relative;
+    top: 45%;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 13px;
+}
+
+.curriculo h2{
+    color: black;
+    top: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+.logo_fatec{
+    z-index: 10;
+    width:200px;
+    height:200px;
+}
+
+.fatec_mapa{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 12%;
+}
+
+.sobre{
+    position: relative;
+    font-size: 10px;
+    top: 15%;
+    margin: 32px;
+    border: solid black;
+    border-radius: 20px;
+}
+
+.sobre p{
+    position: relative;
+    top: 30%;
+    font-size: 50px;
+    color: darkred;
+    
+}
